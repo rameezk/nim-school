@@ -5,3 +5,6 @@ build-all:
 
 clean-all:
 	for dir in $(SUBDIRS) ; do make -C $$dir clean ; done
+
+generate:
+	cookiecutter __template__
